@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by &lt;your-login&gt;.*
+*This project has been created as part of the 42 curriculum by &lt;fedacax;.*
 
 # Libft
 
