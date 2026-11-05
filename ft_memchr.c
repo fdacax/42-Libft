@@ -6,7 +6,7 @@
 /*   By: fedacax <fedacax@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 17:45:35 by fedacax           #+#    #+#             */
-/*   Updated: 2026/08/27 17:54:56 by fedacax          ###   ########.fr       */
+/*   Updated: 2026/11/05 21:22:32 by fedacax          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*ptr;
+	const unsigned char	*ptr;
 	size_t			i;
 
-	ptr = (unsigned char *)s;
+	ptr = (const unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{

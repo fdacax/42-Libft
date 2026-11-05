@@ -6,7 +6,7 @@
 
 Libft is the first C project in the 42 curriculum: rewrite part of the standard C library (`libc`) from scratch and build a personal library, `libft.a`, to reuse in later projects.
 
-Reimplementing functions like `strlen`, `memmove` or `atoi` forces you to understand what happens under the hood: how pointers and pointer arithmetic work, when and how to allocate and free memory, and how to handle `NULL`, overlapping buffers and other edge cases. The bonus part adds linked list functions, the first contact with data structures in the curriculum.
+Reimplementing functions like `strlen`, `memmove` or `atoi` forces you to understand what happens under the hood: how pointers and pointer arithmetic work, when and how to allocate and free memory, and how to handle `NULL`, overlapping buffers and other edge cases. The project also includes linked list functions, the first contact with data structures in the curriculum.
 
 The code follows the 42 Norm and only uses the functions allowed by the subject (`malloc`, `free` and `write`).
 
@@ -61,7 +61,6 @@ These functions use the `t_list` struct, defined in `libft.h`.
 
 ```bash
 make          # builds libft.a
-make bonus    # includes the list functions
 make clean    # removes object files
 make fclean   # removes object files and libft.a
 make re       # fclean + make
@@ -86,15 +85,16 @@ cc -Wall -Wextra -Werror main.c -L. -lft -I. -o program
 
 ### References
 
-- `man` pages (`man 3 strlcpy`, `man 3 memmove`, etc.), the main source for understanding the expected behavior of each function
+- `man` pages, the main source for understanding the expected behavior of each function
 - [cppreference – C](https://en.cppreference.com/w/c)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/c/c-programming-language/)
 - [Stack Overflow](https://stackoverflow.com/), for specific questions and comparing approaches
 - Discussions with other 42 students, mainly about edge cases and testing
 
 ### AI usage
 
-I used AI as a study and debugging aid, not to write the functions. Specifically:
+AI was used as a study and debugging aid, not to write the functions. Specifically:
 
 - clarifying concepts;
 - interpreting compiler errors, segfaults and AddressSanitizer reports;
-- reviewing code I had already written, looking for edge cases I had missed.
+- reviewing code that had already been written, looking for edge cases that had been missed.

@@ -6,7 +6,7 @@
 /*   By: fedacax <fedacax@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 17:03:55 by fedacax           #+#    #+#             */
-/*   Updated: 2026/11/05 19:55:56 by fedacax          ###   ########.fr       */
+/*   Updated: 2026/11/05 21:23:38 by fedacax          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*cdest;
-	unsigned char	*csrc;
+	const unsigned char	*csrc;
 	size_t			i;
 
 	cdest = (unsigned char *)dest;
-	csrc = (unsigned char *)src;
+	csrc = (const unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{
