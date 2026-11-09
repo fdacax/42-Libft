@@ -6,7 +6,7 @@
 /*   By: fedacax <fedacax@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 17:26:03 by fedacax           #+#    #+#             */
-/*   Updated: 2026/11/05 21:24:03 by fedacax          ###   ########.fr       */
+/*   Updated: 2026/11/09 17:51:57 by fedacax          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*cdest;
 	const unsigned char	*csrc;
+	unsigned char		*cdest;
 
-	cdest = (unsigned char *)dest;
 	csrc = (const unsigned char *)src;
+	cdest = (unsigned char *)dest;
 	if (cdest > csrc)
 	{
 		while (n > 0)

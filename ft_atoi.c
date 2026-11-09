@@ -6,7 +6,7 @@
 /*   By: fedacax <fedacax@student.42porto.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/24 20:42:17 by fedacax           #+#    #+#             */
-/*   Updated: 2026/11/03 19:52:04 by fedacax          ###   ########.fr       */
+/*   Updated: 2026/11/09 15:23:50 by fedacax          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	nb = 0;
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(str[i]))
 	{
 		nb = nb * 10 + (str[i] - '0');
 		i++;

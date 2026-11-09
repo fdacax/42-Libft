@@ -11,7 +11,7 @@ FLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -rf
 
-SRCS = $(shell find . -name "*.c")
+SRCS = $(filter-out ./main.c, $(shell find . -name "*.c"))
 OBJS = $(SRCS:.c=.o)
 
 #	====================		Colors		====================
@@ -124,6 +124,6 @@ help:
 	$(call print_help)
 
 test:re
-	$(CC) $(FLAGS) main.c $(NAME) -lbsd
+	$(CC) main.c $(NAME) -lbsd
 
 .PHONY: all bonus clean fclean re norm test
